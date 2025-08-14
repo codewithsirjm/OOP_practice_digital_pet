@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pet - OOP Practice</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐾 Digital Pet 🐾</h1>
+        
+        <div class="pet-container">
+            <div class="pet-display">
+                <div id="pet-image" class="pet-image">🐱</div>
+                <div id="pet-mood" class="pet-mood">Happy!</div>
+            </div>
+            
+            <div class="pet-stats">
+                <h3>Pet Stats:</h3>
+                <div class="stat">
+                    <span>Hunger:</span>
+                    <div class="progress-bar">
+                        <div id="hunger-bar" class="progress-fill"></div>
+                    </div>
+                    <span id="hunger-value">50</span>
+                </div>
+                
+                <div class="stat">
+                    <span>Happiness:</span>
+                    <div class="progress-bar">
+                        <div id="happiness-bar" class="progress-fill"></div>
+                    </div>
+                    <span id="happiness-value">50</span>
+                </div>
+                
+                <div class="stat">
+                    <span>Energy:</span>
+                    <div class="progress-bar">
+                        <div id="energy-bar" class="progress-fill"></div>
+                    </div>
+                    <span id="energy-value">50</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="actions">
+            <h3>Actions:</h3>
+            <button id="feed-btn" class="action-btn">🍽️ Feed</button>
+            <button id="play-btn" class="action-btn">🎾 Play</button>
+            <button id="rest-btn" class="action-btn">😴 Rest</button>
+        </div>
+        
+        <div class="messages">
+            <div id="message-display" class="message"></div>
+        </div>
+        
+        <div class="info">
+            <h3>OOP Concepts Demonstrated:</h3>
+            <ul>
+                <li><strong>Classes:</strong> Pet class with properties and methods</li>
+                <li><strong>Encapsulation:</strong> Private properties with getter methods</li>
+                <li><strong>Inheritance:</strong> SpecialPet extends basic Pet</li>
+                <li><strong>Methods:</strong> feed(), play(), rest(), updateMood()</li>
+                <li><strong>DOM Manipulation:</strong> Dynamic updates based on object state</li>
+            </ul>
+            <p><strong>Try:</strong> Modify the classes, add new properties, or change the pet's behavior!</p>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
